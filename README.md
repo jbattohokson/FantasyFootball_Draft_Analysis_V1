@@ -1,4 +1,4 @@
-# 🏈 Fantasy Football Draft Analysis
+# Fantasy Football Draft Analysis
 
 > *"Which players deliver the most value relative to their draft position — and which positions are most predictable year over year?"*
 
@@ -33,7 +33,7 @@ A five-year (2021–2025) PPR fantasy football analytics project covering **QB, 
 ### SQL Layer (MySQL)
 The SQL script builds a complete data pipeline:
 
-1. Creates `fantasy_football_combined` with unified schema across all positions and years
+1. Creates `fantasy_football_combined` with a unified schema across all positions and years
 2. Loads all 20 source tables with position-appropriate point calculation formulas
 3. Runs 15 analysis queries covering: points by position, YoY trends, top performers, draft value, tier classification, consistency scoring, and position predictability
 
@@ -64,9 +64,9 @@ The SQL script builds a complete data pipeline:
 
 ## Key Analyses
 
-**Draft Value Scoring Model** — Each player-season is scored against position average: `pts - position_avg`. Players more than 1 std deviation above average are labeled "Elite Steal"; below average labeled "Bust".
+**Draft Value Scoring Model** — Each player-season is scored against position average: `pts - position_avg`. Players more than 1 std deviation above average are labeled "Elite Steal"; below average are labeled "Bust".
 
-**Position Predictability** — Uses coefficient of variation (CV = std dev / mean) to rank positions by how consistently top performers remain top performers year over year.
+**Position Predictability** — Uses coefficient of variation (CV = std dev / mean) to rank positions by how consistently top performers remain, top performers year over year.
 
 **Player Consistency** — Standard deviation of season fantasy points for multi-year players: lower std dev = more reliable weekly floor.
 
