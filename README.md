@@ -6,7 +6,7 @@
 
 ## Overview
 
-A five-year (2021–2025) PPR fantasy football analytics project covering **QB, RB, WR, and TE** positions. Using MySQL to build a unified data warehouse from raw FantasyPros season stats, and Python to run draft value scoring, consistency analysis, and tier classification — the goal is to surface which players are elite steals, which are busts, and how predictable each position is across seasons.
+A five-year (2021–2025) PPR fantasy football analytics project covering **QB, RB, WR, and TE** positions. Using MySQL to build a unified data warehouse from raw FantasyPros season stats and Python to run draft value scoring, consistency analysis, and tier classification, the goal is to surface which players are elite steals, which are busts, and how predictable each position is across seasons.
 
 ---
 
